@@ -22,7 +22,7 @@ const noakhaliAdd = document
   .addEventListener("click", () => {
     let input = document.getElementById("input1");
     let val = input.valueAsNumber;
-    if (val > 0) {
+    if (2000 >= val > 0) {
       let noakhali = document.getElementById("noakhali").innerText;
       document.getElementById("noakhali").innerText = Number(noakhali) - val;
       const newMoney = Number(myMoney) + val;
@@ -35,6 +35,9 @@ const noakhaliAdd = document
       main2.appendChild(div);
       div.innerHTML = `<h2> ${val} taka is donated for noakhali,at noakhali Bangladesh </h2>`;
       div.insertAdjacentHTML("beforeend", `<p>${date}</p>`);
+    } else if (val > 2000) {
+      alert("Donation limit is 2000 taka");
+      input.value = "";
     } else {
       alert("Please enter a valid number");
       input.value = "";
@@ -46,7 +49,7 @@ const feniAdd = document
   .addEventListener("click", () => {
     let input = document.getElementById("input2");
     let val = input.valueAsNumber;
-    if (val > 0) {
+    if (2000 >= val > 0) {
       let feni = document.getElementById("feni").innerText;
       document.getElementById("feni").innerText = Number(feni) - val;
       const newMoney = Number(myMoney) + val;
@@ -59,6 +62,9 @@ const feniAdd = document
       main2.appendChild(div);
       div.innerHTML = `<h2> ${val} taka is donated for feni,at feni Bangladesh </h2>`;
       div.insertAdjacentHTML("beforeend", `<p>${date}</p>`);
+    } else if (val > 2000) {
+      alert("Donation limit is 2000 taka");
+      input.value = "";
     } else {
       alert("Please enter a valid number");
       input.value = "";
@@ -70,7 +76,7 @@ const quoteAdd = document
   .addEventListener("click", () => {
     let input = document.getElementById("input3");
     let val = input.valueAsNumber;
-    if (val > 0) {
+    if (2000 >= val > 0) {
       let quote = document.getElementById("quote").innerText;
       document.getElementById("quote").innerText = Number(quote) - val;
       const newMoney = Number(myMoney) + val;
@@ -83,6 +89,9 @@ const quoteAdd = document
       main2.appendChild(div);
       div.innerHTML = `<h2>${val} taka is donated for quote,at quote Bangladesh </h2>`;
       div.insertAdjacentHTML("beforeend", `<p>${date}</p>`);
+    } else if (val > 2000) {
+      alert("Donation limit is 2000 taka");
+      input.value = "";
     } else {
       alert("Please enter a valid number");
       input.value = "";
