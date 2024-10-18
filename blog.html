@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="tailwind.config.js" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="m-0 p-0 text-[20px] font-bold">
+    <header class="bg-[#F9F7F3]">
+      <nav class="px-8 py-4 text-[20px]">
+        <div class="navbar">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <button
+                class="btn px-[32px] py-[12px] text-[20px] font-bold bg-[#B4F461]"
+              >
+                <a href="./index.html">Home</a>
+              </button>
+            </div>
+          </div>
+          <div class="navbar-center gap-3 font-bold">
+            <img src="./assets/logo.png" alt="" />
+            <span>Donate Bangladesh</span>
+          </div>
+          <div class="navbar-end flex gap-1 font-medium">
+            <img src="./assets/coin.png" alt="" />
+            <span id="myMoney" class="text-[#111111]/[.5]">5500</span>
+            <span class="text-[#111111]/[.5]">BDT</span>
+          </div>
+        </div>
+      </nav>
+      <div class="px-[180px] py-[40px] bg-white">
+        <div class="flex justify-center gap-3">
+          <button
+            id="donate"
+            class="btn text-[20px] font-bold px-[32px] py-[12px] active"
+          >
+            Donate
+          </button>
+          <button
+            id="history"
+            class="btn text-[20px] font-bold px-[32px] py-[12px]"
+          >
+            History
+          </button>
+        </div>
+      </div>
+    </header>
+    <main
+      class="w-full h-screen px-[180px] flex justify-start align-center flex-col gap-[20px]"
+    >
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          Click to open this one and close others
+        </div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">
+          Click to open this one and close others
+        </div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">
+          Click to open this one and close others
+        </div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">
+          Click to open this one and close others
+        </div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
