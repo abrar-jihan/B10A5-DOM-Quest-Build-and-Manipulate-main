@@ -28,8 +28,16 @@ const noakhaliAdd = document
       const newMoney = Number(myMoney) + val;
       document.getElementById("myMoney").innerText = newMoney;
       input.value = "";
+
+      let date = new Date();
+      const div = document.createElement("div");
+      div.setAttribute("class", "power123");
+      main2.appendChild(div);
+      div.innerHTML = `<h2> ${val} taka is donated for noakhali,at noakhali Bangladesh </h2>`;
+      div.insertAdjacentHTML("beforeend", `<p>${date}</p>`);
     } else {
       alert("Please enter a valid number");
+      input.value = "";
     }
   });
 
@@ -44,8 +52,16 @@ const feniAdd = document
       const newMoney = Number(myMoney) + val;
       document.getElementById("myMoney").innerText = newMoney;
       input.value = "";
+      let date = new Date();
+
+      const div = document.createElement("div");
+      div.setAttribute("class", "power123");
+      main2.appendChild(div);
+      div.innerHTML = `<h2> ${val} taka is donated for feni,at feni Bangladesh </h2>`;
+      div.insertAdjacentHTML("beforeend", `<p>${date}</p>`);
     } else {
       alert("Please enter a valid number");
+      input.value = "";
     }
   });
 
@@ -60,7 +76,15 @@ const quoteAdd = document
       const newMoney = Number(myMoney) + val;
       document.getElementById("myMoney").innerText = newMoney;
       input.value = "";
+      let date = new Date();
+
+      const div = document.createElement("div");
+      div.setAttribute("class", "power123");
+      main2.appendChild(div);
+      div.innerHTML = `<h2>${val} taka is donated for quote,at quote Bangladesh </h2>`;
+      div.insertAdjacentHTML("beforeend", `<p>${date}</p>`);
     } else {
       alert("Please enter a valid number");
+      input.value = "";
     }
   });

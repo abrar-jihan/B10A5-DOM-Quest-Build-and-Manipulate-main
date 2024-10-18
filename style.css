@@ -1,3 +1,14 @@
 .active {
   background-color: #b4f461;
 }
+.power123 {
+  border: 1px solid #333;
+  padding: 32px;
+  border-radius: 20px;
+}
+.power123 > p {
+  font-size: 16px;
+  color: hsla(0, 0%, 7%, 0.7);
+  line-height: 26px;
+  font-weight: light;
+}
